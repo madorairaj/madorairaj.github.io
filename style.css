@@ -17,12 +17,25 @@ h1 {
     color: #161313;
 }
 
+h2 {
+    font-family: fenwick;
+    font-size: 40px;
+    color: #161313;
+    margin: 0;
+}
+
 p {
     font-family: Garamond;
     font-size: 18px;
     color: #161313;
     text-align: justify;
-    margin: 5px 0;
+    margin: 10px 0 0;
+}
+
+ul {
+    list-style-image: url('images/hyphen.svg');
+    font-family: Garamond;
+    font-size: 18px;
 }
 
 /* link styles */
@@ -54,7 +67,17 @@ a:hover, a:active {
     flex-direction: column;
     width: 25%;
     margin: 10px;
-    padding: 5px 15px;
+    padding: 0;
+}
+
+.sub-sidebar-left {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 15px;
     outline: 5px groove #eb9737;
     background-color: #e2d2a5;
 }
@@ -63,8 +86,9 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
     width: 75%;
+    height: fit-content;
     margin: 10px;
-    padding: 5px 15px;
+    padding: 10px;
     outline: 5px groove #eb9737;
     background-color: #e2d2a5;
 }
