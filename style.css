@@ -24,6 +24,15 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-family: Garamond;
+    font-size: 25px;
+    color: #161313;
+    text-align: left;
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
 p {
     font-family: Garamond;
     font-size: 18px;
@@ -36,6 +45,24 @@ ul {
     list-style-image: url('images/hyphen.svg');
     font-family: Garamond;
     font-size: 18px;
+    margin: 5px 0;
+}
+
+ol.none {
+    font-family: Garamond;
+    font-size: 18px;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+li.point {
+    margin-right: 10px;
+    padding: 0 45px;
+    list-style: none;
+    background-image: url("images/pointing-hand.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
 }
 
 /* link styles */
@@ -48,6 +75,11 @@ a:hover, a:active {
     background-color: #d83634;
 }
 
+a.name:hover, a.name:active {
+    color: #161313;
+    background: none;
+}
+
 /* flexboxes */
 .container {
     display: flex;
@@ -58,7 +90,7 @@ a:hover, a:active {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: flex-start;
 }
 
@@ -66,8 +98,7 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin: 10px;
-    padding: 0;
+    margin: 10px 5px 10px 10px;
 }
 
 .sub-sidebar-left {
@@ -86,17 +117,54 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin: 10px;
-    padding: 0;
+    padding-top: 10px;
 }
 
 .sub-sidebar-right {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 97%;
     height: fit-content;
     margin-bottom: 20px;
     padding: 10px;
     outline: 5px groove #eb9737;
     background-color: #e2d2a5;
+}
+
+.img-divider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+}
+
+.img-box-lg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.img-box-jr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.text-break {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    padding: 5px;
 }
